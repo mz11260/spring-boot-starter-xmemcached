@@ -37,7 +37,7 @@ public class XMemCachedProperties {
 
 
     public List<InetSocketAddress> getInetSocketAddresses() {
-        final List<InetSocketAddress> list = new ArrayList<InetSocketAddress>();
+        final List<InetSocketAddress> list = new ArrayList<>();
         if (this.socketAddresses != null && this.socketAddresses.size() > 0) {
             this.socketAddresses.forEach(address ->
                     list.add(new InetSocketAddress(address.getHostname(), address.getPort()))
